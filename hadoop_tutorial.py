@@ -32,10 +32,11 @@ WORDCOUNT_JAR = (
 wordcount_args = ['wordcount', 'gs://pub/shakespeare/rose.txt', output_file]
 
 # Path to the Spark transformation script.
-SPARK_SCRIPT = 'gs://your-bucket-name/scripts/spark_transformation.py'
+SPARK_SCRIPT = 'gs://us-east4-highcpu-0ce0a99b-bucket/scripts/spark_transformation.py'
+
 
 # Arguments for Spark job.
-spark_args = ['--input', 'gs://your-bucket-name/input-data/', '--output', 'gs://your-bucket-name/output-data/']
+spark_args = ['--input', 'gs://us-east4-highcpu-0ce0a99b-bucket/input-data/', '--output', 'gs://us-east4-highcpu-0ce0a99b-bucket/output-data/']
 
 yesterday = datetime.datetime.combine(
     datetime.datetime.today() - datetime.timedelta(1),
